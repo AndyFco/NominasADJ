@@ -1,0 +1,171 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{E00B0770-6B73-4D34-8522-636E695E4C91}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>WindowsApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>SistemaNomina</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="WindowsFormsApp1\SistemaNomina.sln" />
+    <Content Include="WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe" />
+    <Content Include="WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb" />
+    <Content Include="WindowsFormsApp1\WindowsFormsApp1\obj\Debug\SistemaNomina.csproj.FileListAbsolute.txt" />
+    <Content Include="WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.FileListAbsolute.txt" />
+    <Content Include="WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe" />
+    <Content Include="WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb" />
+    <Content Include="WindowsFormsApp1\WindowsFormsApp1\SistemaNomina.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="WindowsFormsApp1\WindowsFormsApp1\App.config" />
+    <None Include="WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config" />
+    <None Include="WindowsFormsApp1\WindowsFormsApp1\obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="WindowsFormsApp1\WindowsFormsApp1\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="WindowsFormsApp1\WindowsFormsApp1\obj\Debug\SistemaNomina.csproj.CoreCompileInputs.cache" />
+    <None Include="WindowsFormsApp1\WindowsFormsApp1\obj\Debug\SistemaNomina.csproj.GenerateResource.cache" />
+    <None Include="WindowsFormsApp1\WindowsFormsApp1\obj\Debug\SistemaNomina.csprojAssemblyReference.cache" />
+    <None Include="WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache" />
+    <None Include="WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache" />
+    <None Include="WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache" />
+    <None Include="WindowsFormsApp1\WindowsFormsApp1\Properties\Settings.settings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConecxionDB.cs" />
+    <Compile Include="WindowsFormsApp1\WindowsFormsApp1\frmCargo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowsFormsApp1\WindowsFormsApp1\frmCargo.Designer.cs">
+      <DependentUpon>frmCargo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowsFormsApp1\WindowsFormsApp1\frmDepartamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowsFormsApp1\WindowsFormsApp1\frmDepartamento.Designer.cs">
+      <DependentUpon>frmDepartamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowsFormsApp1\WindowsFormsApp1\frmEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowsFormsApp1\WindowsFormsApp1\frmEmpleado.Designer.cs">
+      <DependentUpon>frmEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowsFormsApp1\WindowsFormsApp1\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowsFormsApp1\WindowsFormsApp1\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowsFormsApp1\WindowsFormsApp1\marPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowsFormsApp1\WindowsFormsApp1\marPrincipal.Designer.cs">
+      <DependentUpon>marPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowsFormsApp1\WindowsFormsApp1\mostCargo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowsFormsApp1\WindowsFormsApp1\mostCargo.Designer.cs">
+      <DependentUpon>mostCargo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowsFormsApp1\WindowsFormsApp1\mostDepartamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowsFormsApp1\WindowsFormsApp1\mostDepartamento.Designer.cs">
+      <DependentUpon>mostDepartamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowsFormsApp1\WindowsFormsApp1\mostEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowsFormsApp1\WindowsFormsApp1\mostEmpleado.Designer.cs">
+      <DependentUpon>mostEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowsFormsApp1\WindowsFormsApp1\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="WindowsFormsApp1\WindowsFormsApp1\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="WindowsFormsApp1\WindowsFormsApp1\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="WindowsFormsApp1\WindowsFormsApp1\Program.cs" />
+    <Compile Include="WindowsFormsApp1\WindowsFormsApp1\Properties\AssemblyInfo.cs" />
+    <Compile Include="WindowsFormsApp1\WindowsFormsApp1\Properties\Resources.Designer.cs" />
+    <Compile Include="WindowsFormsApp1\WindowsFormsApp1\Properties\Settings.Designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="WindowsFormsApp1\WindowsFormsApp1\frmCargo.resx">
+      <DependentUpon>frmCargo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsFormsApp1\WindowsFormsApp1\frmDepartamento.resx">
+      <DependentUpon>frmDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsFormsApp1\WindowsFormsApp1\frmEmpleado.resx">
+      <DependentUpon>frmEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsFormsApp1\WindowsFormsApp1\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsFormsApp1\WindowsFormsApp1\marPrincipal.resx">
+      <DependentUpon>marPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsFormsApp1\WindowsFormsApp1\mostCargo.resx">
+      <DependentUpon>mostCargo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsFormsApp1\WindowsFormsApp1\mostDepartamento.resx">
+      <DependentUpon>mostDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsFormsApp1\WindowsFormsApp1\mostEmpleado.resx">
+      <DependentUpon>mostEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources" />
+    <EmbeddedResource Include="WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmCargo.resources" />
+    <EmbeddedResource Include="WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmDepartamento.resources" />
+    <EmbeddedResource Include="WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmEmpleado.resources" />
+    <EmbeddedResource Include="WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Login.resources" />
+    <EmbeddedResource Include="WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.marPrincipal.resources" />
+    <EmbeddedResource Include="WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.mostCargo.resources" />
+    <EmbeddedResource Include="WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.mostDepartamento.resources" />
+    <EmbeddedResource Include="WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.mostEmpleado.resources" />
+    <EmbeddedResource Include="WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources" />
+    <EmbeddedResource Include="WindowsFormsApp1\WindowsFormsApp1\Properties\Resources.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="WindowsFormsApp1\WindowsFormsApp1\bin\Release\" />
+    <Folder Include="WindowsFormsApp1\WindowsFormsApp1\obj\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
