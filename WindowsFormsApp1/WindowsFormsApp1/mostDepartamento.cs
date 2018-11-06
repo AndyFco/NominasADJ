@@ -21,5 +21,11 @@ namespace WindowsFormsApp1
         {
             this.Close();
         }
+
+        private void Mostrar_Click(object sender, EventArgs e)
+        {
+            ConecxionDB c = new ConecxionDB();
+            c.MostrarDepartamento(DepartamentosInfo, int.Parse(Codigo.Text));
+        }
     }
 }

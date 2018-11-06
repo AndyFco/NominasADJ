@@ -28,21 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.MostrarCargo = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Codigo = new System.Windows.Forms.TextBox();
+            this.Mostrar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MostrarCargo)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // MostrarCargo
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 65);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(776, 311);
-            this.dataGridView1.TabIndex = 0;
+            this.MostrarCargo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.MostrarCargo.Location = new System.Drawing.Point(12, 65);
+            this.MostrarCargo.Name = "MostrarCargo";
+            this.MostrarCargo.Size = new System.Drawing.Size(776, 311);
+            this.MostrarCargo.TabIndex = 0;
             // 
             // label1
             // 
@@ -53,21 +53,22 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Código:";
             // 
-            // textBox1
+            // Codigo
             // 
-            this.textBox1.Location = new System.Drawing.Point(62, 27);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 2;
+            this.Codigo.Location = new System.Drawing.Point(62, 27);
+            this.Codigo.Name = "Codigo";
+            this.Codigo.Size = new System.Drawing.Size(100, 20);
+            this.Codigo.TabIndex = 2;
             // 
-            // button1
+            // Mostrar
             // 
-            this.button1.Location = new System.Drawing.Point(180, 24);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Mostrar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Mostrar.Location = new System.Drawing.Point(180, 24);
+            this.Mostrar.Name = "Mostrar";
+            this.Mostrar.Size = new System.Drawing.Size(75, 23);
+            this.Mostrar.TabIndex = 3;
+            this.Mostrar.Text = "Mostrar";
+            this.Mostrar.UseVisualStyleBackColor = true;
+            this.Mostrar.Click += new System.EventHandler(this.Mostrar_Click);
             // 
             // button2
             // 
@@ -85,13 +86,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Mostrar);
+            this.Controls.Add(this.Codigo);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.MostrarCargo);
             this.Name = "mostCargo";
             this.Text = "mostCargo";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MostrarCargo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -99,10 +100,10 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView MostrarCargo;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox Codigo;
+        private System.Windows.Forms.Button Mostrar;
         private System.Windows.Forms.Button button2;
     }
 }

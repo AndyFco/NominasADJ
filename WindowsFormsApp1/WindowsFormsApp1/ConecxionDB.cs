@@ -47,7 +47,39 @@ namespace WindowsFormsApp1
                 MessageBox.Show("No se lleno el ComboBox: " + ex.ToString());
             }
         }
-        
 
+        public void MostrarDepartamento (DataGridView dgv, int codigo)
+        {//Selecciona de la base de datos La informacion de la vista de empleados
+            try
+            {
+
+
+                da = new SqlDataAdapter("Select * from Cargo Where DepartamentoCodigo=" + codigo, conectar);
+                dt = new DataTable();
+                da.Fill(dt);
+                dgv.DataSource = dt;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se lleno el ComboBox: " + ex.ToString());
+            }
+        }
+
+        public void MostrarCargo(DataGridView dgv, int codigo)
+        {//Selecciona de la base de datos La informacion de la vista de empleados
+            try
+            {
+
+
+                da = new SqlDataAdapter("Select * from Cargo Where CargoCodigo=" + codigo, conectar);
+                dt = new DataTable();
+                da.Fill(dt);
+                dgv.DataSource = dt;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se lleno el ComboBox: " + ex.ToString());
+            }
+        }
     }
 }

@@ -21,5 +21,12 @@ namespace WindowsFormsApp1
         {
             this.Close();
         }
+
+        private void Mostrar_Click(object sender, EventArgs e)
+        {
+            ConecxionDB c = new ConecxionDB();
+            c.MostrarCargo(MostrarCargo, int.Parse(Codigo.Text));
+            
+        }
     }
 }
