@@ -16,10 +16,16 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
-
+        
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Mostrar_Click(object sender, EventArgs e)
+        {
+            ConecxionDB c = new ConecxionDB();
+            c.MostrarEmpleado(infoEmpleado, int.Parse(Codigo.Text));
         }
     }
 }
